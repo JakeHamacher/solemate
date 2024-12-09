@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 public class Customer {
 
     @Id
-    private Long id;  // The primary key column is now 'id'
+    private Long id;
     
     private String name;
     private String email;

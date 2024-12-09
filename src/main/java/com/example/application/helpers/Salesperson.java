@@ -14,15 +14,14 @@ public class Salesperson {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "salesperson_id") // Match the column name in the database
+    @Column(name = "salesperson_id")
     private Long id;
 
     private String name;
 
     @OneToMany(mappedBy = "salesperson")
-    private List<Ticket> tickets; // A salesperson can have many tickets
+    private List<Ticket> tickets;
 
-    // Getter and Setter Methods
     public Long getId() {
         return id;
     }

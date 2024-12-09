@@ -23,12 +23,10 @@ public class Product {
         setQuantityInStock(quantityInStock);
     }
 
-    // Getter for 'name'
     public String getName() {
         return name;
     }
 
-    // Setter for 'name'
     public void setName(String name) {
         this.name = name;
     }
